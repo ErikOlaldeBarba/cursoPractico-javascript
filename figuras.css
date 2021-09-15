@@ -1,0 +1,38 @@
+body{
+    font-family: roboto;
+}
+
+body h1,body p{
+    text-align: center;
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.seccion{
+    margin:60px;
+    padding:60px;
+    border-radius:15px;
+    box-shadow: 3px 5px 8px 1px gray;
+}
+
+.seccion label,.seccion button, .seccion input{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+}
+
+
+label{
+    color:gray;
+}
+
+button{
+    font-weight: bold;
+    margin-top:20px;
+    padding:8px;
+    width:100%;
+}
