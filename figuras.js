@@ -117,3 +117,23 @@ function calcularAreaTriangulo(){
     const result = areaTriangulo(altura,base)
     alert("El area del triangulo mide: "+result+"cm")
 }
+
+
+
+
+
+const alturaTrianguloIsosceles = (ladoDerecho,ladoIzquierdo,base) => {
+    if(ladoDerecho == ladoIzquierdo || ladoDerecho == base || ladoIzquierdo == base){
+        if(ladoDerecho == ladoIzquierdo && ladoDerecho == base && ladoIzquierdo == base){
+            console.log("todos los lados son iguales")
+        }else{
+            console.log('Si es Triangulo Isosceles')
+            let altura = Math.sqrt((ladoDerecho ** 2) - ((base**2)/4));
+            return altura
+        }
+    }else{
+        console.log("no es un triangulo isosceles")
+    }
+}
+
+alturaTrianguloIsosceles(ladoTriangulo1,ladoTriangulo2,baseTriangulo)
